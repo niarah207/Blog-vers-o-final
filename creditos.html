@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script>try{if(localStorage.getItem('uy-tema')==='escuro'){document.documentElement.classList.add('tema-escuro');}}catch(e){}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos — Updated Yesterday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Imagens/logotipo.png">
+    <noscript>
+        <style>.revelar, .revelar-esquerda, .revelar-direita, .revelar-cima, .revelar-cascata > * { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
+</head>
+<body>
+
+    <!-- CABEÇALHO PADRÃO -->
+    <header class="cabecalho">
+        <a href="index.html" class="conteiner-logo">
+            <img src="Imagens/logotipo.png" alt="Logo Updated Yesterday" class="imagem-logo">
+            <div class="textos-logo">
+                <span class="titulo-logo">UPDATED YESTERDAY</span>
+                <span class="subtitulo-logo"> 
+                    <p>Nós não dependemos de sorte.</p>
+                    <p>Planejamento é o que nos move.</p>
+                </span>
+            </div>
+        </a>
+
+        <nav class="navegacao">
+            <ul class="lista-menu">
+                <li><a href="index.html#sobre-nos" class="link-menu">Sobre Nós</a></li>
+                <li><a href="index.html#objetivo" class="link-menu">Objetivo</a></li>
+                <li><a href="index.html#funcionalidades" class="link-menu">Funcionalidades</a></li>
+                <li><a href="index.html#rodape" class="link-menu">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="conteiner-botao">
+            <a href="https://updatedyesterday.streamlit.app/" class="botao-acao">
+                <img src="Icones/icones-escuros/brilhos.png" alt="" class="icone-botao">
+                Experimente Grátis
+            </a>
+        </div>
+
+        <button class="btn-tema" id="btn-tema" type="button" aria-label="Alternar modo claro/escuro" aria-pressed="false">
+            <svg class="icone-sol" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="12" y1="2" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="2" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icone-lua" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+
+        <button class="btn-hamburguer" id="btn-hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+        </button>
+    </header>
+
+    <!-- MENU MOBILE (HAMBÚRGUER) -->
+    <div class="overlay-menu-mobile" id="overlay-menu-mobile"></div>
+    <nav class="menu-mobile" id="menu-mobile" aria-hidden="true">
+        <ul class="lista-menu-mobile">
+            <li><a href="index.html#sobre-nos" class="link-menu-mobile">Sobre Nós</a></li>
+            <li><a href="index.html#objetivo" class="link-menu-mobile">Objetivo</a></li>
+            <li><a href="index.html#funcionalidades" class="link-menu-mobile">Funcionalidades</a></li>
+            <li><a href="index.html#rodape" class="link-menu-mobile">Contato</a></li>
+        </ul>
+        <a href="https://updatedyesterday.streamlit.app/" class="botao-acao botao-acao-mobile">
+            <img src="Icones/icones-escuros/brilhos.png" alt="" class="icone-botao">
+            Experimente Grátis
+        </a>
+    </nav>
+
+        <main>
+            <button class="link-voltar-pagina" onclick="history.back()" type="button">
+                ← Voltar
+            </button>
+            <section class="creditos-section" id="creditosfinais">
+      <div class="creditos-header revelar-cima">
+        <div class="creditos-header-content">
+          <span class="creditos-tag">CRÉDITOS</span>
+          <h2 class="creditos-titulo">Reconhecemos quem inspira e contribui.</h2>
+          <p class="creditos-subtitulo">
+            Aqui estão os créditos das imagens, ícones e recursos utilizados neste projeto. Agradecemos aos criadores pelo excelente trabalho.
+          </p>
+        </div>
+        <div class="creditos-header-ilustracao">
+          <img src="Imagens/créditos.png" alt="Ilustração de Créditos" />
+        </div>
+      </div>
+
+      <div class="creditos-grid revelar-cascata">
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/grafico.png" alt="Ícone aumentar" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Aumentar</h3>
+            <span class="credito-fonte">Adrian Coquet</span>
+            <a href="https://flaticon.com" target="_blank" rel="noopener noreferrer" class="credito-link">
+              flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/marca-paginas.png" alt="marca paginas" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Marca Páginas</h3>
+            <span class="credito-fonte">Yuan Design</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/marca-paginas_5186087?term=salvar&page=1&position=5&origin=search&related_id=5186087" target="_blank" rel="noopener noreferrer" class="credito-link">
+              flaticon.com
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/do-utilizador.png" alt="Ícone Do utilizador" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Do utilizador</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/do-utilizador_1077063?term=pessoas&page=1&position=4&origin=search&related_id=1077063" target="_blank" rel="noopener noreferrer" class="credito-link">
+              flaticon.com
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/olho.png" alt="Ícone olho" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">olho</h3>
+            <span class="credito-fonte">Gregor Cresnar</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/olho_158746?term=olho&page=1&position=4&origin=search&related_id=158746" target="_blank" rel="noopener noreferrer" class="credito-link">
+              flaticon.com
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/estrela.png" alt="Ícone estrela" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Estrela</h3>
+            <span class="credito-fonte">Gregor Cresnar</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/estrela_126482?term=estrela&page=1&position=1&origin=search&related_id=126482" target="_blank" rel="noopener noreferrer" class="credito-link">
+              flaticon.com
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/alvo-com-flecha.png" alt="Ícone alvo-com-flecha" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Alvo-com-flecha</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://flaticon.com" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/lista.png" alt="a lista" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Lista</h3>
+            <span class="credito-fonte">Storyset</span>
+            <a href="https://storyset.com" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com  
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+       <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/escudo.png" alt="a Ilustração"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Escudo</h3>
+            <span class="credito-fonte">alfanz</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/seguro_8227009?term=seguran%C3%A7a&page=1&position=9&origin=search&related_id=8227009" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com  
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+       <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/ideia-criativa.png" alt="Imagem lampada" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Lâmpada</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/ideia-criativa_1819990?term=lampada&page=1&position=13&origin=search&related_id=1819990" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/coracao.png" alt="Imagem coração" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Coração </h3>
+            <span class="credito-fonte">Vlad Szirka</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/coracao_2589197?term=cora%C3%A7%C3%A3o&page=1&position=6&origin=search&related_id=2589197" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/parceria.png" alt="Imagem parceria" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Parceria</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/handshake-de-parceria_2665080?term=parceria&page=1&position=11&origin=search&related_id=2665080" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/preventivo.png" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Preventiva</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/handshake-de-parceria_2665080?term=parceria&page=1&position=11&origin=search&related_id=2665080" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/bolha-de-bate-papo.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Bate-papo</h3>
+            <span class="credito-fonte">BomSymbols</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/falando_2594058?term=bal%C3%A3o+de+fala&page=1&position=10&origin=search&related_id=2594058" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/agenda.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Agenda</h3>
+            <span class="credito-fonte">Tanah Basah</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/agenda_8740776?term=agenda&page=1&position=4&origin=search&related_id=8740776" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/configuracao.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Engrenagem </h3>
+            <span class="credito-fonte">Iilhan Fitrotul Hayat</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/configuracao_2956788?term=configura%C3%A7%C3%A3o&page=1&position=6&origin=search&related_id=2956788" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/dolar.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Dolar</h3>
+            <span class="credito-fonte">Nendra Wahyu</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/grafico-de-perdas_15916677?term=grafico+descendo&related_id=15916677" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/falando.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Falando</h3>
+            <span class="credito-fonte">Storyset</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/falando_2594058?term=bal%C3%A3o+de+fala&page=1&position=10&origin=search&related_id=2594058" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/foguete.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Foguete</h3>
+            <span class="credito-fonte">Rikas Dzihab</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/startup_8468302?term=foguete&page=1&position=39&origin=search&related_id=8468302" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/grafico-de-barras.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Gráfico </h3>
+            <span class="credito-fonte">Andy Horvath</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/grafico-de-barras_4279509?term=grafico&page=1&position=27&origin=search&related_id=4279509" target="_blank" rel="noopener noreferrer" class="credito-link">
+              sFlaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/grafico-de-perdas.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Gráfico-de-perdas</h3>
+            <span class="credito-fonte">Storyset</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/grafico-de-perdas_15916677?term=grafico+descendo&related_id=15916677" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/historia.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Histórico </h3>
+            <span class="credito-fonte">Soni Sokeli</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/historia_6888510?term=historico&page=1&position=5&origin=search&related_id=6888510" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+           <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/relogio.png"/>
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Relógio</h3>
+            <span class="credito-fonte">apien</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/relogio_4024449?term=relogio&page=1&position=24&origin=search&related_id=4024449" target="_blank" rel="noopener noreferrer" class="credito-link">
+              Flaticon.com 
+              <svg class="icon-external" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+
+      <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/aceitar.png" alt="Ícone de aceitar" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Imagem - aceitar</h3>
+        <span class="credito-fonte">Aldo Cervantes</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/aceitar_2550214?term=positivo&page=1&position=4&origin=search&related_id=2550214" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Acessar fonte <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+             <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/arquivos.png"/>
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Imagem - Arquivos</h3>
+        <span class="credito-fonte">Eucalyp</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/banco-de-dados-em-nuvem_2637294?term=banco+de+dados&related_id=2637294" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+             <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/cadeado.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Imagem - Cadeado</h3>
+        <span class="credito-fonte">Magnific</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/cadeado_2575570?term=cadeado&page=1&position=8&origin=search&related_id=2575570" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+             <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/cerebro.png"/>
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Imagem - cerebro</h3>
+        <span class="credito-fonte">Magnific</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/cerebro_170082?term=cerebro&page=1&position=44&origin=search&related_id=170082" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+             <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/duaspessoas-creme.png"/>
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Dois usuarios</h3>
+        <span class="credito-fonte">Becris</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/comercial_860800?term=pessoas&page=1&position=56&origin=search&related_id=860800" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+             <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/entrega-rapida.png"/>
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Entrega rápida</h3>
+        <span class="credito-fonte">Uniconlabs</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/entrega-rapida_5470304?term=caminh%C3%A3o&page=1&position=26&origin=search&related_id=5470304" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+             <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/facebook.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Facebook</h3>
+        <span class="credito-fonte">NajmunNahar</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/facebook_3128208?term=facebook&page=1&position=5&origin=search&related_id=3128208" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+             <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/ferramentas.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Ferramentas</h3>
+        <span class="credito-fonte">Magnific</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/ferramentas_1077198?term=ferramentas&page=1&position=1&origin=search&related_id=1077198" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+                    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/globo.png"/>
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Globo</h3>
+        <span class="credito-fonte">Uniconlabs</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/globo_3870936?term=globo&page=1&position=3&origin=search&related_id=3870936" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+       </div>
+
+    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/instagram.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Instagram</h3>
+        <span class="credito-fonte">Magnific</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/instagram_1384031?term=instagram&page=1&position=4&origin=search&related_id=1384031" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/linkedin.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Linkedin</h3>
+        <span class="credito-fonte">riajulislan</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/linkedin_3536569?term=linkedin&page=1&position=10&origin=search&related_id=3536569" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/lupa.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Lupa</h3>
+        <span class="credito-fonte">Ayub Irawan</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/lupa_2311526?term=lupa&page=1&position=3&origin=search&related_id=2311526" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/relogio.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Lupa</h3>
+        <span class="credito-fonte">apien</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/relogio_4024449?term=relogio&page=1&position=24&origin=search&related_id=4024449" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/robo.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Robô</h3>
+        <span class="credito-fonte">Bharat Icons</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/robo_7220142?term=robo&page=1&position=13&origin=search&related_id=7220142" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/correspondencia.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">Correspondencia</h3>
+        <span class="credito-fonte">Magnific</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/correspondencia_6011093?term=cartas&page=1&position=2&origin=search&related_id=6011093" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="credito-card credito-card--marrom">
+      <div class="credito-icone">
+        <img src="Icones/icones-claros/whatsapp.png" alt="Ícone de Ilustrações" />
+      </div>
+      <div class="credito-info">
+        <h3 class="credito-item-titulo">whatsapp</h3>
+        <span class="credito-fonte">Magnific</span>
+        <a href="https://www.flaticon.com/br/icone-gratis/whatsapp_154858?term=whatsapp&page=1&position=2&origin=search&related_id=154858" target="_blank" rel="noopener noreferrer" class="credito-link">
+          Flaticon.com  <span class="icon-external">↗</span>
+        </a>
+      </div>
+    </div>
+
+
+
+      </div>
+
+      <div class="creditos-aviso revelar">
+        <span class="aviso-icone">ℹ</span>
+        <p>Se você é o autor de algum recurso utilizado aqui e deseja solicitar a remoção ou alteração dos créditos, entre em contato conosco.</p>
+      </div>
+    </section>
+        </main>
+
+    <script src="menu.js"></script>
+    <script src="tema.js"></script>
+    <script src="scroll-reveal.js"></script>
+    </body>
+</html>

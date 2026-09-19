@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script>try{if(localStorage.getItem('uy-tema')==='escuro'){document.documentElement.classList.add('tema-escuro');}}catch(e){}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Política de Privacidade — Updated Yesterday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Imagens/logotipo.png">
+    <noscript>
+        <style>.revelar, .revelar-esquerda, .revelar-direita, .revelar-cima, .revelar-cascata > * { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
+</head>
+<body>
+
+    <!-- CABEÇALHO PADRÃO -->
+    <header class="cabecalho">
+        <a href="index.html" class="conteiner-logo">
+            <img src="Imagens/logotipo.png" alt="Logo Updated Yesterday" class="imagem-logo">
+            <div class="textos-logo">
+                <span class="titulo-logo">UPDATED YESTERDAY</span>
+                <span class="subtitulo-logo"> 
+                    <p>Nós não dependemos de sorte.</p>
+                    <p>Planejamento é o que nos move.</p>
+                </span>
+            </div>
+        </a>
+
+        <nav class="navegacao">
+            <ul class="lista-menu">
+                <li><a href="index.html#sobre-nos" class="link-menu">Sobre Nós</a></li>
+                <li><a href="index.html#objetivo" class="link-menu">Objetivo</a></li>
+                <li><a href="index.html#funcionalidades" class="link-menu">Funcionalidades</a></li>
+                <li><a href="index.html#rodape" class="link-menu">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="conteiner-botao">
+            <a href="https://updatedyesterday.streamlit.app/" class="botao-acao">
+                <img src="Icones/icones-escuros/brilhos.png" alt="" class="icone-botao">
+                Experimente Grátis
+            </a>
+        </div>
+
+        <button class="btn-tema" id="btn-tema" type="button" aria-label="Alternar modo claro/escuro" aria-pressed="false">
+            <svg class="icone-sol" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="12" y1="2" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="2" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icone-lua" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+
+        <button class="btn-hamburguer" id="btn-hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+        </button>
+    </header>
+
+    <!-- MENU MOBILE (HAMBÚRGUER) -->
+    <div class="overlay-menu-mobile" id="overlay-menu-mobile"></div>
+    <nav class="menu-mobile" id="menu-mobile" aria-hidden="true">
+        <ul class="lista-menu-mobile">
+            <li><a href="index.html#sobre-nos" class="link-menu-mobile">Sobre Nós</a></li>
+            <li><a href="index.html#objetivo" class="link-menu-mobile">Objetivo</a></li>
+            <li><a href="index.html#funcionalidades" class="link-menu-mobile">Funcionalidades</a></li>
+            <li><a href="index.html#rodape" class="link-menu-mobile">Contato</a></li>
+        </ul>
+        <a href="https://updatedyesterday.streamlit.app/" class="botao-acao botao-acao-mobile">
+            <img src="Icones/icones-escuros/brilhos.png" alt="" class="icone-botao">
+            Experimente Grátis
+        </a>
+    </nav>
+
+    <main class="privacy-container">
+
+    <button class="link-voltar-pagina" onclick="history.back()" type="button">
+        ← Voltar
+    </button>
+
+    <section class="secao-politica-privacidade">
+      <div class="conteiner-politica">
+        
+        <header class="cabecalho-politica revelar-cima">
+          <h1 class="titulo-politica">Política de Privacidade</h1>
+          <div class="linha-decorativa"></div>
+          <p class="subtitulo-politica">
+            A sua privacidade é importante para nós. Esta política explica como lidamos com as informações coletadas ou enviadas a este site.
+          </p>
+        </header>
+
+        <div class="lista-cards-politica revelar-cascata">
+
+          <article class="card-politica">
+            <div class="conteudo-card">
+              <h2 class="titulo-card">1. Coleta de Dados</h2>
+              <ul class="lista-itens-card">
+                <li>
+                  <strong>Envio de Notícias:</strong> Coletamos apenas o seu <strong>e-mail</strong>, fornecido voluntariamente no campo de cadastro do site para o recebimento de atualizações.
+                </li>
+                <li>
+                  <strong>Atendimento e Contato:</strong> Caso você entre em contato diretamente conosco via e-mail, WhatsApp/telefone ou redes sociais, utilizaremos os seus dados (como nome, número de telefone ou arroba) exclusivamente para responder às suas mensagens.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-politica">
+            <div class="conteudo-card">
+              <h2 class="titulo-card">2. Uso das Informações</h2>
+              <p class="texto-card">
+                O e-mail cadastrado no campo de notícias será usado apenas para o envio de atualizações sobre a <strong>UY</strong>. Não enviamos spam. As informações trocadas em atendimentos diretos não serão usadas para marketing sem a sua autorização.
+              </p>
+            </div>
+          </article>
+
+          <article class="card-politica">
+            <div class="conteudo-card">
+              <h2 class="titulo-card">3. Compartilhamento de Dados</h2>
+              <p class="texto-card">
+                Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros.
+              </p>
+            </div>
+          </article>
+
+          <article class="card-politica">
+            <div class="conteudo-card">
+              <h2 class="titulo-card">4. Seus Direitos e Cancelamento</h2>
+              <p class="texto-card">
+                Você pode solicitar a remoção do seu <strong>e-mail</strong> da nossa lista de notícias ou pedir a exclusão das mensagens trocadas em nosso suporte a qualquer momento.
+              </p>
+            </div>
+          </article>
+
+          <article class="card-politica">
+            <div class="conteudo-card">
+              <h2 class="titulo-card">5. Canais de Contato e Redes Sociais</h2>
+              <p class="texto-card espaco-inferior">
+                Se tiver dúvidas, quiser solicitar a remoção dos seus dados ou acompanhar o projeto, você pode falar conosco através dos canais oficiais:
+              </p>
+              
+              <div class="lista-contatos">
+                <div class="item-contato">
+                  <div class="detalhe-contato">
+                    <img src="Icones/icones-claros/correspondencia.png" alt="E-mail" class="icone-contato">
+                    <span class="rotulo-contato">E-mail:</span>
+                  </div>
+                  <span class="valor-contato">updatedyesterday26@gmail.com</span>
+                </div>
+
+                <div class="item-contato">
+                  <div class="detalhe-contato">
+                    <img src="Icones/icones-claros/whatsapp.png" alt="WhatsApp" class="icone-contato">
+                    <span class="rotulo-contato">WhatsApp / Telefone:</span>
+                  </div>
+                  <span class="valor-contato">(51) 993928030</span>
+                </div>
+
+                <div class="item-contato">
+                  <div class="detalhe-contato">
+                    <img src="Icones/icones-claros/instagram.png" alt="Instagram" class="icone-contato">
+                    <span class="rotulo-contato">Instagram:</span>
+                  </div>
+                  <span class="valor-contato">updatedyesterday26</span>
+                </div>
+
+                <div class="item-contato">
+                  <div class="detalhe-contato">
+                    <img src="Icones/icones-claros/facebook.png" alt="Outra rede" class="icone-contato">
+                    <span class="rotulo-contato">Facebook:</span>
+                  </div>
+                  <span class="valor-contato">Updated Yesterday UY</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-politica card-destaque">
+            <div class="conteudo-card">
+              <h3 class="titulo-destaque">Transparência, respeito e segurança.</h3>
+              <p class="texto-card">Esses são os pilares da nossa relação com você.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    </main>
+
+<script src="menu.js"></script>
+<script src="tema.js"></script>
+<script src="scroll-reveal.js"></script>
+</body>
+</html>
