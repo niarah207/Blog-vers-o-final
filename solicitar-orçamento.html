@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script>try{if(localStorage.getItem('uy-tema')==='escuro'){document.documentElement.classList.add('tema-escuro');}}catch(e){}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Solicitar Orçamento — Updated Yesterday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Imagens/logotipo.png">
+    <noscript>
+        <style>.revelar, .revelar-esquerda, .revelar-direita, .revelar-cima, .revelar-cascata > * { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
+</head>
+<body>
+
+    <!-- CABEÇALHO PADRÃO -->
+    <header class="cabecalho">
+        <a href="index.html" class="conteiner-logo">
+            <img src="Imagens/logotipo.png" alt="Logo Updated Yesterday" class="imagem-logo">
+            <div class="textos-logo">
+                <span class="titulo-logo">UPDATED YESTERDAY</span>
+                <span class="subtitulo-logo"> 
+                    <p>Nós não dependemos de sorte.</p>
+                    <p>Planejamento é o que nos move.</p>
+                </span>
+            </div>
+        </a>
+
+        <nav class="navegacao">
+            <ul class="lista-menu">
+                <li><a href="index.html#sobre-nos" class="link-menu">Sobre Nós</a></li>
+                <li><a href="index.html#objetivo" class="link-menu">Objetivo</a></li>
+                <li><a href="index.html#funcionalidades" class="link-menu">Funcionalidades</a></li>
+                <li><a href="index.html#rodape" class="link-menu">Contato</a></li>
+            </ul>
+        </nav>
+
+    
+        <button class="btn-hamburguer" id="btn-hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+        </button>
+    </header>
+
+    <!-- MENU MOBILE (HAMBÚRGUER) -->
+    <div class="overlay-menu-mobile" id="overlay-menu-mobile"></div>
+    <nav class="menu-mobile" id="menu-mobile" aria-hidden="true">
+        <ul class="lista-menu-mobile">
+            <li><a href="index.html#sobre-nos" class="link-menu-mobile">Sobre Nós</a></li>
+            <li><a href="index.html#objetivo" class="link-menu-mobile">Objetivo</a></li>
+            <li><a href="index.html#funcionalidades" class="link-menu-mobile">Funcionalidades</a></li>
+            <li><a href="index.html#rodape" class="link-menu-mobile">Contato</a></li>
+        </ul>
+        <a href="https://updatedyesterday.streamlit.app/" class="botao-acao botao-acao-mobile">
+            <img src="Icones/icones-escuros/brilhos.png" alt="" class="icone-botao">
+            Experimente Grátis
+        </a>
+    </nav>
+
+    <main class="orc-secao">
+        <div class="orc-grade">
+
+            <!-- Coluna esquerda: contexto -->
+            <section class="orc-info revelar-esquerda">
+                <span class="tagline">Orçamento</span>
+                <h1 class="orc-titulo">Um valor pensado para o tamanho da sua frota</h1>
+                <div class="linha-dourada"></div>
+                <p class="orc-descricao">
+                    Conte um pouco sobre a sua operação. O investimento varia conforme a quantidade de veículos,
+                    então cada proposta é montada sob medida. Além de oferecer um teste grátis de nosssa plataforma, já oferecemos noção do valor comercial!
+                </p>
+
+                <ol class="orc-passos">
+                    <li class="orc-passo">
+                        <span class="orc-passo-num">1</span>
+                        <div>
+                            <h3>Você envia os dados</h3>
+                            <p>Leva cerca de um minuto para preencher.</p>
+                        </div>
+                    </li>
+                    <li class="orc-passo">
+                        <span class="orc-passo-num">2</span>
+                        <div>
+                            <h3>Analisamos a sua frota</h3>
+                            <p>Calculamos o valor com base no número de veículos.</p>
+                        </div>
+                    </li>
+                    <li class="orc-passo">
+                        <span class="orc-passo-num">3</span>
+                        <div>
+                            <h3>Retornamos com a proposta</h3>
+                            <p>Entramos em contato pelo telefone ou e-mail informado.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Coluna direita: formulário -->
+            <div class="orc-card revelar-direita" id="orcCard">
+                <form class="orc-formulario" id="orcForm" action="https://formspree.io/f/xaeqjwpn" method="POST" novalidate>
+                    <h2 class="orc-card-titulo">Solicitar orçamento</h2>
+                    <p class="orc-card-sub">Os campos marcados com * são obrigatórios.</p>
+
+                    <div class="orc-campos">
+                        <div class="orc-campo orc-campo--cheio">
+                            <label for="nome">Nome completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Como você se chama?" autocomplete="name" required>
+                            <span class="orc-erro">Informe o seu nome completo.</span>
+                        </div>
+
+                        <div class="orc-campo">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(51) 90000-0000" autocomplete="tel" inputmode="tel" required>
+                            <span class="orc-erro">Informe um telefone com DDD.</span>
+                        </div>
+
+                        <div class="orc-campo">
+                            <label for="cargo">Cargo *</label>
+                            <input type="text" id="cargo" name="cargo" placeholder="Ex.: Gerente de frota" autocomplete="organization-title" required>
+                            <span class="orc-erro">Informe o seu cargo.</span>
+                        </div>
+
+                        <div class="orc-campo orc-campo--cheio">
+                            <label for="email">E-mail para contato *</label>
+                            <input type="email" id="email" name="email" placeholder="voce@empresa.com.br" autocomplete="email" required>
+                            <span class="orc-erro">Informe um e-mail válido.</span>
+                        </div>
+
+                        <div class="orc-campo orc-campo--cheio">
+                            <label for="veiculos">Número de veículos *</label>
+                            <input type="number" id="veiculos" name="veiculos" placeholder="Ex.: 25" min="1" step="1" inputmode="numeric" required>
+                            <span class="orc-dica">Usamos esse número para calcular o valor da sua proposta.</span>
+                            <span class="orc-erro">Informe quantos veículos a sua empresa possui.</span>
+                        </div>
+
+                        <div class="orc-campo orc-campo--cheio">
+                            <label for="mensagem">Mensagem <span class="orc-opcional">(opcional)</span></label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Algo que devemos saber sobre a sua operação?"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="orc-rodape">
+                        <p class="orc-privacidade">
+                            Seus dados são usados apenas para retornar este contato.
+                            <a href="politica-de-provacidade.html">Política de Privacidade</a>
+                        </p>
+                        <button type="submit" class="btn btn-principal">
+                            Enviar solicitação
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="orc-sucesso" role="status" aria-live="polite">
+                    <div class="icone-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                    </div>
+                    <h2>Solicitação enviada</h2>
+                    <p>Obrigado pelo interesse. Em breve entraremos em contato com a proposta para a sua frota.</p>
+                    <a href="index.html" class="btn btn-secundario">Voltar ao site</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+<script src="menu.js"></script>
+<script src="tema.js"></script>
+<script src="scroll-reveal.js"></script>
+<script>
+    (function () {
+        var form = document.getElementById('orcForm');
+        var card = document.getElementById('orcCard');
+        var tel  = document.getElementById('telefone');
+
+        // Máscara de telefone brasileiro: (00) 00000-0000
+        tel.addEventListener('input', function () {
+            var d = tel.value.replace(/\D/g, '').slice(0, 11);
+            var r = d;
+            if (d.length > 10)      r = '(' + d.slice(0,2) + ') ' + d.slice(2,7) + '-' + d.slice(7);
+            else if (d.length > 6)  r = '(' + d.slice(0,2) + ') ' + d.slice(2,6) + '-' + d.slice(6);
+            else if (d.length > 2)  r = '(' + d.slice(0,2) + ') ' + d.slice(2);
+            else if (d.length > 0)  r = '(' + d;
+            tel.value = r;
+        });
+
+        function validar(campo) {
+            var ok = campo.checkValidity();
+            if (campo.id === 'nome')     ok = ok && campo.value.trim().split(/\s+/).length >= 2;
+            if (campo.id === 'telefone') ok = ok && campo.value.replace(/\D/g, '').length >= 10;
+            if (campo.id === 'veiculos') ok = ok && parseInt(campo.value, 10) >= 1;
+            campo.closest('.orc-campo').classList.toggle('orc-invalido', !ok);
+            return ok;
+        }
+
+        form.querySelectorAll('input[required]').forEach(function (c) {
+            c.addEventListener('blur', function () { validar(c); });
+            c.addEventListener('input', function () {
+                if (c.closest('.orc-campo').classList.contains('orc-invalido')) validar(c);
+            });
+        });
+
+        // Envio assíncrono via Fetch para o Formspree
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var todosOk = true, primeiroErro = null;
+            form.querySelectorAll('input[required]').forEach(function (c) {
+                if (!validar(c)) { todosOk = false; primeiroErro = primeiroErro || c; }
+            });
+            if (!todosOk) { primeiroErro.focus(); return; }
+
+            var dados = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: dados,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(function (resposta) {
+                if (resposta.ok) {
+                    card.classList.add('orc-enviado');
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    alert('Ocorreu um erro ao enviar a solicitação. Por favor, tente novamente.');
+                }
+            }).catch(function (erro) {
+                alert('Erro na ligação. Verifique a sua Internet e tente novamente.');
+            });
+        });
+    })();
+</script>
+</body>
+</html>
