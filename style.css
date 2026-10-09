@@ -1,4 +1,4 @@
-    /* ==========================================================================
+/* ==========================================================================
         VARIÁVEIS GLORAIS E RESET
         ========================================================================== */
         :root {
@@ -3223,4 +3223,293 @@
             width: 18px;
             height: 18px;
         }
+    }
+
+    /* ==========================================================================
+    SOLICITAR ORÇAMENTO
+    ========================================================================== */
+    .orc-secao {
+        min-height: calc(100vh - 90px);
+        padding: 70px 8% 90px;
+        background: radial-gradient(circle at 20% 30%, var(--cor-fundo-principal) 0%, var(--cor-fundo-secao) 100%);
+    }
+
+    .orc-grade {
+        display: grid;
+        grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+        gap: 64px;
+        align-items: start;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    /* Coluna da esquerda */
+    .orc-info {
+        padding-top: 14px;
+    }
+
+    .orc-titulo {
+        font-size: 2.7rem;
+        line-height: 1.18;
+        margin-bottom: 20px;
+    }
+
+    .orc-descricao {
+        color: var(--cor-texto-medio);
+        font-size: 1.05rem;
+        max-width: 460px;
+        margin-bottom: 36px;
+    }
+
+    .orc-passos {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        position: relative;
+        max-width: 460px;
+    }
+
+    .orc-passos::before {
+        content: '';
+        position: absolute;
+        left: 19px;
+        top: 20px;
+        bottom: 20px;
+        width: 1px;
+        background-color: var(--cor-linha-divisoria);
+    }
+
+    .orc-passo {
+        position: relative;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .orc-passo-num {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--cor-icone-fundo);
+        border: 3px solid var(--cor-fundo-secao);
+        color: var(--cor-destaque-dourado);
+        font-family: var(--fonte-titulos);
+        font-weight: 700;
+        font-size: 1.05rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .orc-passo h3 {
+        font-size: 1.05rem;
+        margin-bottom: 2px;
+    }
+
+    .orc-passo p {
+        font-size: 0.9rem;
+        color: var(--cor-texto-medio);
+    }
+
+    /* Cartão do formulário */
+    .orc-card {
+        background-color: var(--cor-fundo-card);
+        border: 1px solid var(--cor-linha-divisoria);
+        border-radius: 20px;
+        padding: 40px 38px 34px;
+        box-shadow: var(--sombra-card);
+    }
+
+    .orc-card-titulo {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+
+    .orc-card-sub {
+        color: var(--cor-texto-suave);
+        font-size: 0.9rem;
+        margin-bottom: 26px;
+    }
+
+    .orc-campos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 20px;
+    }
+
+    .orc-campo {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .orc-campo--cheio {
+        grid-column: 1 / -1;
+    }
+
+    .orc-campo label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--cor-texto-escuro);
+    }
+
+    .orc-opcional {
+        font-weight: 400;
+        color: var(--cor-texto-suave);
+    }
+
+    .orc-campo input,
+    .orc-campo textarea {
+        width: 100%;
+        font-family: var(--fonte-corpo);
+        font-size: 0.95rem;
+        color: var(--cor-texto-escuro);
+        background-color: var(--cor-fundo-principal);
+        border: 1px solid var(--cor-linha-divisoria);
+        border-radius: 12px;
+        padding: 13px 16px;
+        transition: border-color var(--transicao-padrao), box-shadow var(--transicao-padrao), background-color var(--transicao-padrao);
+    }
+
+    .orc-campo textarea {
+        resize: vertical;
+        min-height: 110px;
+        line-height: 1.5;
+    }
+
+    .orc-campo input::placeholder,
+    .orc-campo textarea::placeholder {
+        color: var(--cor-texto-suave);
+        opacity: 0.7;
+    }
+
+    .orc-campo input:hover,
+    .orc-campo textarea:hover {
+        border-color: var(--cor-dourado-suave);
+    }
+
+    .orc-campo input:focus,
+    .orc-campo textarea:focus {
+        outline: none;
+        border-color: var(--cor-destaque-dourado);
+        box-shadow: 0 0 0 4px rgba(200, 141, 67, 0.18);
+    }
+
+    .orc-campo.orc-invalido input,
+    .orc-campo.orc-invalido textarea {
+        border-color: #C0563B;
+    }
+
+    .orc-erro {
+        display: none;
+        font-size: 0.8rem;
+        color: #C0563B;
+    }
+
+    html.tema-escuro .orc-erro,
+    html.tema-escuro .orc-campo.orc-invalido input {
+        color: #E58468;
+        border-color: #E58468;
+    }
+
+    .orc-campo.orc-invalido .orc-erro {
+        display: block;
+    }
+
+    .orc-dica {
+        font-size: 0.8rem;
+        color: var(--cor-texto-suave);
+    }
+
+    .orc-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+        padding-top: 24px;
+        border-top: 1px solid var(--cor-linha-divisoria);
+    }
+
+    .orc-privacidade {
+        font-size: 0.8rem;
+        color: var(--cor-texto-suave);
+        max-width: 240px;
+        line-height: 1.45;
+    }
+
+    .orc-privacidade a {
+        color: var(--cor-destaque-dourado);
+    }
+
+    .orc-rodape .btn:focus-visible,
+    .orc-sucesso .btn:focus-visible {
+        outline: 3px solid var(--cor-destaque-dourado);
+        outline-offset: 3px;
+    }
+
+    /* Mensagem de sucesso */
+    .orc-sucesso {
+        display: none;
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .orc-card.orc-enviado .orc-formulario {
+        display: none;
+    }
+
+    .orc-card.orc-enviado .orc-sucesso {
+        display: block;
+        animation: orc-entrada 0.5s ease both;
+    }
+
+    .orc-sucesso .icone-card {
+        margin: 0 auto 18px;
+        width: 64px;
+        height: 64px;
+        color: var(--cor-destaque-dourado);
+    }
+
+    .orc-sucesso h2 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .orc-sucesso p {
+        color: var(--cor-texto-medio);
+        max-width: 380px;
+        margin: 0 auto 24px;
+    }
+
+    @keyframes orc-entrada {
+        from { opacity: 0; transform: translateY(14px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .orc-card.orc-enviado .orc-sucesso {
+            animation: none;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .orc-grade {
+            grid-template-columns: 1fr;
+            gap: 44px;
+        }
+        .orc-titulo { font-size: 2.2rem; }
+    }
+
+    @media screen and (max-width: 576px) {
+        .orc-secao { padding: 40px 5% 70px; }
+        .orc-titulo { font-size: 1.9rem; }
+        .orc-card { padding: 28px 20px 24px; border-radius: 16px; }
+        .orc-campos { grid-template-columns: 1fr; }
+        .orc-rodape { flex-direction: column; align-items: stretch; }
+        .orc-privacidade { max-width: none; }
+        .orc-rodape .btn { width: 100%; }
     }
